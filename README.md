@@ -20,5 +20,6 @@
 ## 如何工作
 
 - `yarn` 安装依赖
-- `yarn test` 进行测试
+- `yarn jest` 进行测试 如果需要查看覆盖率的话请在该命令后添加 `--coverage`
 - `yarn jsdoc` 生成文档
+- `yarn build` 打包项目, 地址为`src/dist/index.html`
