@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "jsdoc": "jsdoc -c .jsdoc.json"
+    "jsdoc": "jsdoc -c .jsdoc.json",
+    "build": "webpack"
   },
   "types": "module",
   "keywords": [],
@@ -21,8 +22,10 @@
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "@types/jest": "^24.0.17",
+    "@types/react": "^16.9.0",
     "babel-eslint": "^10.0.2",
     "babel-jest": "^24.8.0",
+    "babel-loader": "^8.0.6",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "docdash": "^1.1.1",
     "enzyme": "^3.10.0",
@@ -31,11 +34,14 @@
     "eslint-plugin-jest": "^22.15.0",
     "eslint-plugin-jsdoc": "^15.8.0",
     "eslint-plugin-react": "^7.14.3",
+    "html-webpack-plugin": "^3.2.0",
     "jest": "^24.8.0",
     "jsdoc": "^3.6.3",
     "prop-types": "^15.7.2",
     "react-test-renderer": "^16.9.0",
-    "ts-jest": "^24.0.2"
+    "ts-jest": "^24.0.2",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6"
   },
   "dependencies": {
     "@babel/preset-typescript": "^7.3.3",
