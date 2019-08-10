@@ -1,12 +1,7 @@
 import React from 'react'
 import {Button} from '../component/button'
 
-/**
- * Button container
- * 
- * @type {React.ClassicComponent<{},{text: string}>}
- */
-export class Buttons extends React.Component<{},{text: string}> {
+export class Buttons extends React.Component<{onHandleClick: () => Promise<boolean>},{text: string}> {
   constructor(props) {
     super(props)
     this.state = {
@@ -14,8 +9,10 @@ export class Buttons extends React.Component<{},{text: string}> {
     }
   }
   handleOnClick= () => {
-    this.setState({
-      text: 'hello you'
+    this.props.onHandleClick().then(() => {
+      this.setState({
+        text: 'hello you'
+      })
     })
   }
   render() {
